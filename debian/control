@@ -1,0 +1,27 @@
+Source: vyatta-lldp
+Section: contrib/net
+Priority: optional
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Build-Depends:
+ autoconf,
+ automake,
+ autotools-dev,
+ cpio,
+ debhelper (>= 5),
+ libtool,
+Standards-Version: 3.9.6
+
+Package: vyatta-lldp
+Architecture: any
+Depends: ${misc:Depends}, dmidecode, vyatta-debian-lldpd-config, perl (>= 5.8.8), procps, vyatta-cfg
+Description: Vyatta LLDP package
+ This package has the vyatta-lldp programs, and vyatta
+ configureation/operational templates and scripts.
+
+Package: vyatta-service-lldp-v1-yang
+Architecture: any
+Depends: vyatta-lldp (= ${binary:Version})
+Section: admin
+Priority: optional
+Description: vyatta-service-lldp-v1 module
+ The YANG module for vyatta-service-lldp-v1

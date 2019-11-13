@@ -1,0 +1,9 @@
+help: Show lldp neighbors for interface
+
+allowed: /opt/vyatta/sbin/vyatta-netflow.pl --action=list-intf
+
+run: if cli-shell-api existsActive service lldp; then
+       vyatta-show-lldp.pl --action=show-neighbor --intf="$5"
+     else
+       echo LLDP not configured
+     fi

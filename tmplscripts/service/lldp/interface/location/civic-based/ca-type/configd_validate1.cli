@@ -1,0 +1,2 @@
+#!/opt/vyatta/bin/cliexpr
+commit:expression: $VAR(./ca-value/) != "" ; "Must configure the ca-value for ca-type $VAR(@)."

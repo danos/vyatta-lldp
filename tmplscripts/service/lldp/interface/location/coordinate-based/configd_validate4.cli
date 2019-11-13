@@ -1,0 +1,2 @@
+#!/opt/vyatta/bin/cliexpr
+commit:expression: $VAR(./latitude) != "" ; "Must define latitude for interface $VAR(../../@)."

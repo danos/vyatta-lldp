@@ -1,0 +1,2 @@
+#!/opt/vyatta/bin/cliexpr
+commit:expression: $VAR(./country-code/) != "" ; "Must configure the country code."

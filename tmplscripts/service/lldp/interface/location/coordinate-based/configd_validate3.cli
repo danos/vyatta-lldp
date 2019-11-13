@@ -1,0 +1,2 @@
+#!/opt/vyatta/bin/cliexpr
+commit:expression: $VAR(./longitude) != "" ; "Must define longitude for interface $VAR(../../@)."

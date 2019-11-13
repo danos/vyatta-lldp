@@ -1,0 +1,2 @@
+#!/opt/vyatta/bin/cliexpr
+commit:expression: $VAR(../civic-based/) == "" ; "Can only configure 1 location type for interface $VAR(../../@)."

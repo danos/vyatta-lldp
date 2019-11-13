@@ -1,0 +1,7 @@
+help: Show lldp neighbors
+
+run: if cli-shell-api existsActive service lldp; then
+       vyatta-show-lldp.pl --action=show-neighbor
+     else
+       echo LLDP not configured
+     fi
