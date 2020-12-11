@@ -13,7 +13,14 @@ Standards-Version: 3.9.6
 
 Package: vyatta-lldp
 Architecture: any
-Depends: ${misc:Depends}, dmidecode, vyatta-debian-lldpd-config, perl (>= 5.8.8), procps, vyatta-cfg
+Depends: dmidecode,
+ vyatta-debian-lldpd-config,
+ perl (>= 5.8.8),
+ libvyatta-dataplane-perl,
+ libxml-simple-perl,
+ procps,
+ vyatta-cfg,
+ ${misc:Depends}
 Description: Vyatta LLDP package
  This package has the vyatta-lldp programs, and vyatta
  configureation/operational templates and scripts.
