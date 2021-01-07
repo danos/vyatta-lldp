@@ -1,3 +1,10 @@
+vyatta-lldp (0.44) unstable; urgency=medium
+
+  [ Duncan Eastoe ]
+  * debian/control: Add missing Perl module depends
+
+ -- Sharmila Podury <sharmila.podury@att.com>  Thu, 07 Jan 2021 11:20:29 -0800
+
 vyatta-lldp (0.43) unstable; urgency=medium
 
   * DANOS Import master
